@@ -8,7 +8,7 @@ from .models import BlogPost,Student
 	# student = StudentForm()
 	# return render(request,'blog/form.html',{'form':student})
 @login_required()
-def blog_post_list_view(request):
+def blog_post_list_view(request): 
 	# list out object
 	# could be search
 	qs = BlogPost.objects.all().published()
