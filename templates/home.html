@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ title }} </h1>
+
+{% for blog in blog_list %}
+
+{% include 'blog/list-inline.html' with blog_post=blog truncate=True detail=False %}
+
+{% endfor %}
+
+{% endblock %}
